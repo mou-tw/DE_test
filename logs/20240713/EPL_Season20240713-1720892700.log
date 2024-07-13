@@ -1,0 +1,10 @@
+2024-07-13 17:45:00,034 - INFO - parameters : Namespace(type='competitions', particular_competition='PL', parse_rule='EPL_Season', filter_type='season', filter_data='2020,2021,2022,2023')
+2024-07-13 17:45:00,034 - INFO - done parsing urls : ['https://api.football-data.org/v4/competitions/PL/matches?season=2020', 'https://api.football-data.org/v4/competitions/PL/matches?season=2021', 'https://api.football-data.org/v4/competitions/PL/matches?season=2022', 'https://api.football-data.org/v4/competitions/PL/matches?season=2023']
+2024-07-13 17:45:00,037 - INFO - done url checking 
+2024-07-13 17:45:01,746 - INFO - done requesting url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
+2024-07-13 17:45:03,229 - INFO - done requesting url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
+2024-07-13 17:45:04,867 - INFO - done requesting url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
+2024-07-13 17:45:06,325 - INFO - done requesting url: https://api.football-data.org/v4/competitions/PL/matches?season=2023
+2024-07-13 17:45:06,326 - INFO - done requesting urls 
+2024-07-13 17:45:06,333 - INFO - done parsing datas 
+2024-07-13 17:45:06,348 - INFO - done saving datas, file path: /DE_TEST/files/20240713/EPL_Season.csv
