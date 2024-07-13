@@ -1,5 +1,6 @@
 ## CSV File Path
-under folder files/[date]/
+[csv path](https://github.com/mou-tw/DE_test/blob/main/files/20240713/EPL_Season.csv)
+
 
 ## Build Docker Images
 ```
