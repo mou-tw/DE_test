@@ -1,11 +1,22 @@
-# test
-football
-API:
+## CSV File Path
+under folder files/[date]/
 
-API initial Url: https://api.football-data.org/
+## Build Docker Images
+```
+docker build -t de_test . 
+```
 
-API account name: testing.data999@gmail.com
+## Run API Parsing Python Script
+```
+docker run --rm -it -v `pwd`:/DE_TEST de_test python ent/football_api_parser.py -t competitions -pc PL -ft season -fd 2020,2021,2022,2023 -r EPL_Season
+```
 
-API token information:
+## Parameter and Description
+| Parameter | Description | 
+| :--- | ---- | 
+| --type, -t |  Determine the type of data to request. The available options are ['competitions', 'persons', 'teams'].|  
+| --particular_competition, -pc | List one particular competition. The available options are ['PL','ELC']. |  
+| --parse_rule, -r | Choose the parsing logic. Currently, only EPL_Season is defined. |  
+| --filter_type, -ft | Filter key |
+| --filter_data, -fd | Filter value |  
 
-Please modify your client to use a HTTP header named "X-Auth-Token" with the underneath personal token as value. Your token: 12abfbaacdab48bc8948ed6061925e1f
