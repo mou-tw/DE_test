@@ -12,7 +12,7 @@ docker build -t de_test .
 docker run --rm -it -v `pwd`:/DE_TEST de_test python ent/football_api_parser.py -t competitions -pc PL -ft season -fd 2020,2021,2022,2023 -r EPL_Season
 ```
 
-## Parameter and Description
+### Parsing Script Parameter and Description
 | Parameter | Description | 
 | :--- | ---- | 
 | --type, -t |  Determine the type of data to request. The available options are ['competitions', 'persons', 'teams'].|  
@@ -21,3 +21,13 @@ docker run --rm -it -v `pwd`:/DE_TEST de_test python ent/football_api_parser.py 
 | --filter_type, -ft | Filter key |
 | --filter_data, -fd | Filter value |  
 
+## DQC implement
+```
+docker run --rm -it -v `pwd`:/DE_TEST de_test python ent/dqc_ent.py -f /DE_TEST/files/20240713/EPL_Season.csv -r EPL_Season
+```
+
+### DQC Script Parameter and Description
+| Parameter | Description | 
+| :--- | ---- |
+| --file_path, -f | file path|
+| --checking_rule, -r | dpc rules|  
